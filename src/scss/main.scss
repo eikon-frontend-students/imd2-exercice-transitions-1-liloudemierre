@@ -58,4 +58,116 @@ video {
 
 // ---------------------------------------------
 // Votre code ici :
+
+.wrapper-hover .item:hover {
+  background-color: var(--pink);
+}
+
+.wrapper-transition .item {
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+.wrapper-transition .item:hover {
+  background-color: var(--pink);
+}
+
+.wrapper-delay .item {
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-delay: 0.3s;
+}
+
+.wrapper-delay .item:hover {
+  background-color: var(--pink);
+}
+
+.wrapper-two-properties .item {
+  transition-property: background-color, color;
+  transition-duration: 1s;
+}
+
+.wrapper-two-properties .item:hover {
+  background-color: var(--pink);
+  color: #000;
+}
+
+.wrapper-delay-one-property .item {
+  transition: background-color 1s, color 1s 1s;
+}
+
+.wrapper-delay-one-property .item:hover {
+  background-color: var(--pink);
+  color: #000;
+}
+.wrapper-parent .item {
+  transition: background-color 1s;
+}
+.wrapper-parent:hover .item {
+  background-color: var(--pink);
+}
+.wrapper-parent-delay .item {
+  transition: background-color 0.5s 0.5s;
+}
+.wrapper-parent-delay .item:nth-child(2) {
+  transition: background-color 0.5s 1s;
+}
+.wrapper-parent-delay .item:nth-child(3) {
+  transition: background-color 0.5s 1.5s;
+}
+.wrapper-parent-delay:hover .item {
+  background-color: var(--pink);
+}
+
+.wrapper-parent-children {
+  transition: background-color 1s;
+}
+.wrapper-parent-children:hover {
+  background-color: #4361ee;
+}
+
+.wrapper-parent-children:hover .item {
+  background-color: #f72585;
+}
+.wrapper-parent-children .item {
+  transition: background-color 1s;
+}
+
+.wrapper-parent-children-delay {
+  transition: background-color 1s;
+}
+.wrapper-parent-children-delay:hover {
+  background-color: #4361ee;
+}
+
+.wrapper-parent-children-delay:hover .item {
+  background-color: #f72585;
+}
+.wrapper-parent-children-delay .item {
+  transition: background-color 1s 1s;
+}
+
+.wrapper-translate .item {
+  transition: transform 1s;
+}
+
+.wrapper-translate .item:hover {
+  transform: translateY(25%);
+}
+
+.wrapper-rotate .item {
+  transition: transform 0.5s;
+}
+
+.wrapper-rotate .item:hover {
+  transform: rotate(90deg);
+}
+
+.wrapper-scale .item {
+  transition: transform 0.5s;
+}
+
+.wrapper-scale .item:hover {
+  transform: scale(1.2);
+}
 // ---------------------------------------------
